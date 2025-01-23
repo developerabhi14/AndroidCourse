@@ -5,6 +5,7 @@
     android:orientation="vertical">
 
    <TextView
+       android:id="@+id/display_value"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="0"
@@ -12,9 +13,16 @@
       ></TextView>
 
     <Button
+        android:id="@+id/add_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add one "></Button>
+
+    <Button
+        android:id="@+id/subtract_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtract one "></Button>
 
 
 </LinearLayout>
