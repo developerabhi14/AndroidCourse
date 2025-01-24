@@ -1,5 +1,6 @@
 package com.developeravsk.simplecalculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     //ui defined component
-    Button add, subtract;
+    Button add, subtract, gotobutton;
     TextView result;
     int counter = 0;
 
@@ -30,7 +31,16 @@ public class MainActivity extends AppCompatActivity {
         add = findViewById(R.id.add_data);
         subtract = findViewById(R.id.subtract_data);
         result = findViewById(R.id.display_value);
+        gotobutton=findViewById(R.id.next_screen_button);
 
+        gotobutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            //define what needs to be done after clicking this button
+                Intent i=new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(i);
+            }
+        });
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

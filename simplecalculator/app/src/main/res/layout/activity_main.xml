@@ -24,5 +24,12 @@
         android:layout_height="wrap_content"
         android:text="Subtract one "></Button>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to next screen"
+        android:id="@+id/next_screen_button"
+        />
+
 
 </LinearLayout>
