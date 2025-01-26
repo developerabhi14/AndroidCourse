@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
-   <TextView
-       android:id="@+id/display_value"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="0"
-       android:textSize="600px"
-      ></TextView>
+    <TextView
+        android:id="@+id/display_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="600px"></TextView>
 
     <Button
         android:id="@+id/add_data"
@@ -25,11 +24,35 @@
         android:text="Subtract one "></Button>
 
     <Button
+        android:id="@+id/next_screen_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to next screen"
-        android:id="@+id/next_screen_button"
-        />
+        android:text="Go to next screen" />
 
+    <EditText
+        android:id="@+id/typedvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:hint="Type the value you want to pass" />
+
+    <Button
+        android:id="@+id/goto_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to third activity" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your value" />
+
+    <Button
+        android:id="@+id/fourth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to fourth activity" />
 
 </LinearLayout>
